@@ -18,8 +18,8 @@ import tsfel
 import pandas as pd
 
 
-# ficheiro para guardar os valores de SNR
-path = '3mm_seco_2022-06-27/'
+# ficheiro para guardar os valores das características
+path = 'Convencionais_2022-06-03/'
 file_name = path[:-1]
 save_path = r'C:\Users\35196\Desktop\emg' #diretoria da pasta
 path_id = next(os.walk(path))[2]
@@ -30,7 +30,7 @@ dados_writer.writerow(['R_rms_1','A_rms_1','SNR_1', 'A1',
                        'R_rms_2','A_rms_2','SNR_2', 'A2',
                        'R_rms_3','A_rms_3','SNR_3', 'A3' ,
                        'R_rms_4','A_rms_4','SNR_4', 'A4',
-                       'R_rms_5','A_rms_5','SNR_5', 'A5', 'PSD_media', 'RMS_media'])
+                       'R_rms_5','A_rms_5','SNR_5', 'A5', 'PSD_media'])
 # coluna 5 tem os valores ADC
 channel_column = 5
 # taxa de amostragem

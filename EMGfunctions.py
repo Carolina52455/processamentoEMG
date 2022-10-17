@@ -51,7 +51,7 @@ def emg_rectified(emg_correctmean, time):
     plt.tick_params(labelsize=14)
     return emg_rectified
 
-#envelope do sinal pela aplicação de um filtro passa baica
+#envelope do sinal pela aplicação de um filtro passa baixo
 def envelope(emg_rectified,time):
     low_pass= 3
     sfreq = 1000
